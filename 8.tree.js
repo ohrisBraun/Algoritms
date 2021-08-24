@@ -8,7 +8,7 @@ class TreeItem {
 
 function treeBuilder (x) {
     if(x > 0) {
-        return  new TreeItem(x, x - 1 ? treeBuilder(x - 1) : null, x - 1 ? treeBuilder(x - 1) : null)
+        return  new TreeItem(x, x - 2 ? treeBuilder(x - 2) : null, x - 1 ? treeBuilder(x - 1) : null)
     }
 
     return null;
